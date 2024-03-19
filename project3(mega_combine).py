@@ -169,7 +169,7 @@ match a:
         pdf_file.close()
         print(text)
         
-    case default(line):
+    case default:
         print("select no. only from 0 to 10 only")
 
 # code by sarvesh@2004
