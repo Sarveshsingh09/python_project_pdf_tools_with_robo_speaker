@@ -1,3 +1,4 @@
+# code by sarvesh@2004
 import tkinter as tk  
 import cv2
 import subprocess
@@ -8,6 +9,8 @@ root = tk.Tk()
 root.withdraw()
 engine=pyttsx3.init()
 
+#if after selecting or saving file gives error then give the path of specific file in this code . 
+# like pdf or img = "location of file you want select like ->"path/image.jpg" or "path/pdf1.pdf" " 
 # choose no. what you want to do sarvesh !..
 a = int(input("choose no. what you want to do : 1-> image resizer  2-> image resizer with robo speaker  3-> pdf merge  4->pdf merge with robo speaker  5->file convertor  6->file convertor with robo speaker  7-> split pdf  8-> split pdf according to page no. you want  9->extract text from pdf  10-> extract text from pdf with page no. you want :  "))
 match a:
@@ -143,7 +146,7 @@ match a:
             new_pdf_file.close()
         pdf_file.close()
         
-    
+
     case 9:
         pdf1 = filedialog.askopenfilenames()
         pdf_file = open(pdf1, 'rb')
@@ -168,4 +171,34 @@ match a:
         
     case default(line):
         print("select no. only from 0 to 10 only")
+
+# code by sarvesh@2004
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# code by sarvesh@2004
         
